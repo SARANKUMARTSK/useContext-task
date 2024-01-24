@@ -1,36 +1,27 @@
 import React from 'react'
-import Card from './components/Card'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faVault } from '@fortawesome/free-solid-svg-icons'
+import Product from './components/Product'
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faApple } from '@fortawesome/free-brands-svg-icons';
+import Context from './Utils/Context';
+import { UserContext } from './Utils/Context';
+import { useContext } from 'react';
 
 function App() {
-  return <>
-    <div className='my_page'>
-      <header className='header'>
-      <FontAwesomeIcon className='icon' icon={faVault} />
-        <h1>Mobile Jone<sup className='sup'>New</sup></h1>
-      </header>
-      <Card />
-      <hr />
-      <div className='rate_page'>
-        <div className='space_between'>
-          <h2>SUBTOTAL:</h2>
-          <h2 >Price</h2>
-        </div>
-        <div className='space_between'>
-          <h2>SHIPPING:</h2>
-          <h2>FREE</h2>
-        </div>
-      </div>
-      <hr />
-      <div className='space_between rate_page'>
-        <h2>TOTAL:</h2>
-        <h2>Price</h2>
-      </div>
-      <div></div>
-       {/* <p className='flex_end rate_page'>Get Daily Cash With Nespola card</p> */}
 
-    </div>
+  return <>
+  <Navbar className="bg-body-tertiary">
+        <Container>
+          <Navbar.Brand>
+          <FontAwesomeIcon style={{fontSize:"38px"}} icon={faApple} />{' '}
+            <span style={{fontFamily:"monospace" , color:"red" , fontWeight:"bold"}}>Apple Store</span>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <Context><Product /></Context>
+  <Context />
+   
   </>
 }
 
