@@ -1,6 +1,25 @@
-.product_button{
-    height: 40px;
-    width: 40px;
+.product_button1{
+    font-weight: bolder;
+    font-size:25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.product_button2{
+    font-weight: bolder;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+button+span{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px   ;
 }
 .products{
     display: flex;
@@ -16,3 +35,25 @@
     font-family:'Courier New', Courier, monospace;
     margin: 20px;
 }
+.product_data>h5{
+    color: red;
+    text-shadow: 1px 1px 1px black;
+}
+.product_data>h4{
+    color: green;
+    text-shadow: 1px 1px 1px black;
+}
+.product_data>p{
+    color: grey;
+    font-weight: bold;
+    
+}
+
+.product_data>span{
+    color: grey;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px;
+    text-shadow: 1px 1px 1px black;     
+}
+

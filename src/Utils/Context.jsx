@@ -10,6 +10,8 @@ function Context({children}) {
               "title": "iPhone 9",
               "description": "An apple mobile which is nothing like apple",
               "price": 549,
+              "quantity" : 0,
+              "subTotal": 0,
               "discountPercentage": 12.96,
               "rating": 4.69,
               "stock": 94,
@@ -29,6 +31,8 @@ function Context({children}) {
               "title": "iPhone X",
               "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
               "price": 899,
+              "quantity" : 0,
+              "subTotal": 0,
               "discountPercentage": 17.94,
               "rating": 4.44,
               "stock": 34,
@@ -47,6 +51,8 @@ function Context({children}) {
               "title": "Samsung Universe 9",
               "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
               "price": 1249,
+              "quantity" : 0,
+              "subTotal": 0,
               "discountPercentage": 15.46,
               "rating": 4.09,
               "stock": 36,
@@ -62,6 +68,8 @@ function Context({children}) {
               "title": "OPPOF19",
               "description": "OPPO F19 is officially announced on April 2021.",
               "price": 280,
+              "quantity" : 0,
+              "subTotal": 0,
               "discountPercentage": 17.91,
               "rating": 4.3,
               "stock": 123,
@@ -81,6 +89,8 @@ function Context({children}) {
               "title": "Huawei P30",
               "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
               "price": 499,
+              "quantity" : 0,
+              "subTotal": 0,
               "discountPercentage": 10.58,
               "rating": 4.09,
               "stock": 32,
@@ -94,8 +104,8 @@ function Context({children}) {
               ]
           }
       ])
-  // console.log(product.products[0]);
-
+ 
+   
   return <UserContext.Provider value={{product,setProduct}}>
   {children}
   </UserContext.Provider>
